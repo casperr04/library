@@ -1,0 +1,109 @@
+body {
+    margin-top: 3em;
+    background-image: url(static/background.jpg);
+    position: relative;
+    background-repeat: repeat;
+}
+
+.submit-form {
+    margin: auto;
+    width: 50%;
+    border: 0.5rem outset pink;
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.966);
+    padding: 2px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    width: 40em;
+}
+
+.input-label {
+    line-height: 4vh;
+}
+
+.book-add{
+    line-height: 1em;
+    font-size: 5em;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 5vh;
+}
+
+#submit-div {
+    padding-top: 4vh;
+    padding-bottom: 5vh;
+}
+
+#submit {
+    height: 2em;
+    width: 5em;
+    font-size: 1.5em;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.book-div {
+    margin-top: 35px;
+    border: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.book-display {
+    margin: 5px;
+    width: 25%;
+    line-height: 3em;
+    box-sizing: border-box;
+    text-align: center;
+    border: 0.5rem outset pink;
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.966);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.book-display-read {
+    margin: 5px;
+    width: 25%;
+    line-height: 3em;
+    box-sizing: border-box;
+    text-align: center;
+    border: 0.5rem outset rgb(203, 255, 192);
+    border-radius: 25px;
+    background-color: rgba(243, 255, 239, 0.966);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+.delete-button {
+    background-color: red;
+    color: white;
+    border-color: gray;
+    font-size: 1.3em;
+}
+
+.read-button {
+    background-color: rgb(30, 134, 4);
+    color: white;
+    border-color: gray;
+    font-size: 1.3em;
+}
+
+.book-info-base {
+    font-size: 1.5em;
+    background-color: rgb(231, 231, 226);
+    border-radius: 10%;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    margin-top: 5%;
+}
+
+.book-info-element {
+    font-size: 1em;
+    border: 0.2em outset black;
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    margin-top: 7px;
+    overflow-x: auto;
+}
