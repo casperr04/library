@@ -152,8 +152,13 @@ function displayTitles(library){
     library.books.forEach(book => populateTitle(book));
 }
 
-const book1 = new Book("Jimmy John", "How to eat rocks", false, 1, 25);
-const book2 = new Book("Johnagle Books", "DIY Sand tutorial", true, 2, 37);
+function displayForm(event){
+    const submitFormDiv = document.querySelector(".submit-form")
+    submitFormDiv.innerHTML = ''
+}
+
+
+const book1 = new Book("John Doe", "Example Book", false, 1, 25);
 
 library.books.push(book1);
 library.books.push(book2);
