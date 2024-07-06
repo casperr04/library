@@ -77,8 +77,12 @@ function populateTitle(book) {
     const deleteButton = document.createElement('button');
     const readButton = document.createElement('button');
 
-    deleteButton.id = `delete-button-${currentBookId}`;
-    readButton.id = `read-button-${currentBookId}`;
+    deleteButton.id = `delete-button`;
+    readButton.id = `read-button`;
+
+    deleteButton.setAttribute('data-book-id', currentBookId)
+    readButton.setAttribute('data-book-id', currentBookId)
+
 
     deleteButton.classList.add("delete-button");
     readButton.classList.add("read-button");
