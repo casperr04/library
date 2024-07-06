@@ -130,7 +130,7 @@ function addTitle(event) {
 }
 
 function setTitleToRead(event) {
-    const myBookId = parseInt(event.target.id.match(/\d+$/)[0], 10);
+    const myBookId = event.target.dataset.bookId
     const bookRefIndex = library.books.findIndex(book => book.id == myBookId)
 
     if(library.books[bookRefIndex].isRead){
@@ -144,7 +144,7 @@ function setTitleToRead(event) {
 
 
 function deleteTitle(event){
-    const myBookId = parseInt(event.target.id.match(/\d+$/)[0], 10);
+    const myBookId = event.target.dataset.bookId
     library.books = library.books.filter(filterBook => !(filterBook.id == myBookId));
     displayTitles(library);
 }
@@ -165,6 +165,4 @@ function displayForm(event){
 const book1 = new Book("John Doe", "Example Book", false, 1, 25);
 
 library.books.push(book1);
-library.books.push(book2);
-
 displayTitles(library);
